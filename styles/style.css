@@ -1,8 +1,12 @@
 body{
-    font-family: 'Manrope', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 .fill{
     color: white;
+}
+p{
+    color: #4d4d4d;
+    /* font-weight: lighter; */
 }
 
 /* .bg{
