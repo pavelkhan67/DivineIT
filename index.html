@@ -10,28 +10,81 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font link -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
     </style>
     <!-- custom css -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/f2351239bc.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body class="bg-slate-100 w-11/12 mx-auto">
+<body class="bg-slate-100 ">
 
     <!-- Header Goes Here -->
-    <header>
-        <section>
-            <nav class="px-4 py-2 bg-white fixed z-10 w-11/12 left-1/2 transform -translate-x-1/2">
+    <header class="">
+        <section class="bg-white  fixed z-10 inset-0 h-11 ">
+            <nav class="max-w-[1200px] mx-auto md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center ">
+                    <button>
+                        <img class="h-11" src="/images/logoo.png" alt="">
+                    </button>
+
+                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+
+                <ul
+                    class="md:flex md:items-center z-30 md:z-auto md:static absolute bg-white md:opacity-100 opacity-0 pl-8 w-2/3 md:w-auto transition-all ease-in duration-500 text-sm">
+                    <li class="mx-2 my-6 md:my-0">
+                        <a href="">All Products <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-3 h-3 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            </i> </a>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0">
+                        <a href="">Services <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-3 h-3 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            </i> </a>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0">
+                        <a href="">Company <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-3 h-3 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            </i> </a>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0">
+                        <a href="">Contacts <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-3 h-3 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            </i> </a>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0">
+                        <button class="border border-white hover:border-black px-3 font-semibold py-1">LOGIN</button>
+                    </li>
+                    <li class="my-6 md:my-0">
+                        <button class="px-4 py-1 bg-sky-800 text-white rounded-md hover:bg-sky-600">See Pricing</button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- <section class="bg-white fixed z-10 inset-0 h-11">
+            <nav class=" max-w-[1200px] mx-auto">
                 <input type="checkbox" name="" id="check" hidden>
                 <div class="flex justify-between items-center">
-                    <div>
+                    <div class="">
                         <button>
-                            <img class=" h-10" src="/images/logoo.png" alt="">
+                            <img class="h-10 pt-1" src="/images/logoo.png" alt="">
                         </button>
                     </div>
-                    <div class="flex gap-2 md:gap-4 lg:gap-6">
+                    <div class="flex gap-2 md:gap-4 lg:gap-6 justify-center items-center text-sm">
                         <a href="">All Products <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-3 h-3 inline-block">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -52,31 +105,32 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
                             </i> </a>
-                        <button class="hover:border-2 border-black px-2">LOGIN</button>
-                        <button class="w-32 h-8 bg-sky-700 text-white rounded-md">See Pricing</button>
+                        <button class="hover:border border-black px-2 font-semibold">LOGIN</button>
+                        <button class="px-6 py-2 bg-sky-800 text-white rounded-md hover:bg-sky-600">See Pricing</button>
                     </div>
                 </div>
             </nav>
-        </section>
+        </section>-->
         <section class="">
-            <div class="relative">
-                <div class="w-full h-[60vh] md:h-[50vh] lg:h-[80vh] bg-blend-multiply bg-slate-600"
-                    style="background-image: url('https://img.freepik.com/premium-photo/businessman-using-tech-devices-icons-thin-line-interface_117023-904.jpg'); background-size: cover;">
-                </div>
-
-                <div class="absolute top-28 md:top-36 lg:top-44 text-white ps-4 md:ps-10 lg:w-2/3 space-y-5">
-                    <button class="w-fit h-10 bg-blue-700 px-4">VAT Management System</button>
-                    <h2 class="text-3xl">PrismERP, platform independent </h2>
-                    <h2 class="text-3xl">ERP system for multi-dimensional business</h2>
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat suscipit labore atque
-                        architecto natus totam corrupti, assumenda quia perspiciatis aut?</p>
-                    <button class="w-fit py-3 px-4 bg-blue-700 text-white rounded-md">Read More <svg
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-4 h-4 inline-block">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button>
+            <div class="back1">
+                <div class="text-white max-w-[1200px] mx-auto pt-36 pb-24">
+                    <div class="w-3/4 space-y-5 ms-5">
+                        <button class="w-fit h-10 bg-blue-700 px-4">VAT Management System</button>
+                        <h2 class="text-3xl font-semibold">PrismERP, platform independent </h2>
+                        <h2 class="text-3xl font-semibold">ERP system for multi-dimensional business</h2>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat suscipit
+                            labore atque
+                            architecto natus totam corrupti, assumenda quia perspiciatis aut?</p>
+                        <button
+                            class="mt-8 h-fit w-fit py-3 px-4 text-white bg-blue-600 rounded-md transition-transform duration-500 hover:scale-x-110 transform origin-center hover:border-blue-600">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -85,204 +139,222 @@
     <!-- Main Contents Goes Here -->
     <main class="">
         <!-- Top Products Section -->
-        <section class="text-center ">
-            <h1 class="text-3xl py-10">Top Products</h1>
-            <div class="grid grid-cols-3 lg:grid-cols-6 border-t-2 border-slate-100 mx-2 ">
-                <div class="bg-slate-400 hover:bg-blend-multiply border-r-2 border-slate-100">
-                    <img class="hover:filter hover:brightness-75 w-full" src="/images/img.png" alt="">
-                </div>
-                <div class="bg-slate-400 hover:bg-blend-multiply border-r-2 border-slate-100">
-                    <img class="hover:filter hover:brightness-75 w-full" src="/images/img.png" alt="">
-                </div>
-                <div class="bg-slate-400 hover:bg-blend-multiply border-r-2 border-slate-100">
-                    <img class="hover:filter hover:brightness-75 w-full" src="/images/img.png" alt="">
-                </div>
-                <div class="bg-slate-400 hover:bg-blend-multiply border-r-2 border-slate-100">
-                    <img class="hover:filter hover:brightness-75 w-full" src="/images/img.png" alt="">
-                </div>
-                <div class="bg-slate-400 hover:bg-blend-multiply border-r-2 border-slate-100">
-                    <img class="hover:filter hover:brightness-75 w-full" src="/images/img.png" alt="">
-                </div>
-                <div class="bg-slate-400 hover:bg-blend-multiply border-r-2 border-white">
-                    <img class="hover:filter hover:brightness-75 w-full" src="/images/img.png" alt="">
+        <section class="text-center">
+            <h2 class="text-3xl font-semibold py-10">Top Products</h2>
+            <div class="bg-white border-t-2 border-slate-200">
+                <div class="grid grid-cols-3 lg:grid-cols-6 max-w-[1200px] mx-auto">
+                    <div class="border-r-2 border-slate-100">
+                        <img class="filter brightness-90 w-full" src="/images/img.png" alt="">
+                    </div>
+                    <div class="border-r-2 border-slate-100">
+                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                    </div>
+                    <div class="border-r-2 border-slate-100">
+                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                    </div>
+                    <div class="border-r-2 border-slate-100">
+                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                    </div>
+                    <div class="border-r-2 border-slate-100">
+                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                    </div>
+                    <div class="border-r-2 border-white">
+                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="bg-blue-500 text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 lg:px-10 py-5">
-                <div class="grid col-span-2 my-auto">
-                    <div class="grid grid-cols-2 gap-2">
-                        <div class="flex items-center gap-2">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
+            <div class="" style="background-color: rgba(55, 135, 219, 1);">
+                <div
+                    class="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 lg:px-10 py-8 max-w-[1200px] mx-auto">
+                    <div class="grid col-span-2 my-auto ">
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="flex items-center gap-2">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <p class="text-white">Financial Management System</p>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <img class="w-12 rounded-full" src="/images/icon.jpg" alt="">
-                            <p class="text-white">Financial Management System</p>
-                        </div>
+                        <button
+                            class="mt-8 h-fit w-fit py-3 px-4 text-white rounded-md border border-white transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center">
+                            View More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
                     </div>
-                    <button
-                        class="mt-8 h-fit w-fit py-3 px-4 text-white rounded-md border-2 border-white transition-transform duration-300 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center">
-                        View More
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-4 h-4 inline-block">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="grid col-span-1 mt-10 lg:mt-0">
-                    <img class="w-96 " src="/images/img2.png" alt="">
+                    <div class="grid col-span-1 mt-10 lg:mt-0">
+                        <img class="w-96 " src="/images/img2.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Clients Feedback section -->
-        <section class="relative h-auto">
-            <div class="grid grid-cols-2">
-                <div>
+        <section class="">
+            <div class="grid grid-cols-2 relative">
+                <div class="">
 
                 </div>
-                <div class="w-full h-[100vh] md:h-[70vh] lg:h-[80vh] bg-blend-multiply bg-blue-600 opacity-80"
-                    style="background-image: url('https://t4.ftcdn.net/jpg/02/81/89/73/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg'); background-size: cover;">
+                <div class="back2 h-[90vh] md:h-[60vh] lg:h-[75vh]">
+
                 </div>
-            </div>
-            <div class="absolute top-12 md:top-24 lg:top-16 mx-5 lg:mx-10">
-                <h2 class="text-3xl" style="color: rgba(31, 52, 122, 1);">What Clients say</h2>
-                <div class="bg-white rounded-md py-6 px-4 lg:px-10 mt-10">
-                    <div class="flex items-center gap-2">
-                        <img class="w-24 rounded-full" src="/images/user.jpeg" alt="">
-                        <div>
-                            <h2 class="text-xl font-semibold">Pavel khan</h2>
-                            <p class="text-blue-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class=" max-w-[1200px] mx-auto">
+                        <h2 class="text-3xl font-semibold ms-5 mb-10" style="color: rgba(31, 52, 122, 1);">What Clients
+                            say</h2>
+                        <div class="bg-white rounded-md p-5 m-5">
+                            <div class="flex items-center gap-2">
+                                <img class="w-24 rounded-full" src="/images/user.jpeg" alt="">
+                                <div>
+                                    <h2 class="text-xl font-semibold">Pavel khan</h2>
+                                    <p class="text-blue-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="font-light mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                dolores
+                                similique veritatis itaque facilis rerum! Obcaecati eaque aspernatur nulla id,
+                                veritatis, ullam
+                                consequatur amet aperiam corrupti nobis ipsum eligendi minima doloribus facere dicta!
+                                Expedita
+                                magnam, ad cumque optio perferendis quidem excepturi rem non esse corrupti consequuntur
+                                veritatis architecto et aperiam dolorem repellendus neque nobis debitis amet a labore
+                                repudiandae doloribus obcaecati? Ipsum provident, quam cupiditate quo nemo pariatur in
+                                voluptatem ullam harum, ut incidunt quibusdam quas dolor accusantium architecto. Ab
+                                omnis sed
+                                rerum quia ad laudantium nostrum, voluptas minima, quibusdam quidem asperiores quasi.
+                                Qui
+                                perferendis sed totam eos consequatur repudiandae.</p>
                         </div>
                     </div>
-                    <p class="font-light mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolores
-                        similique veritatis itaque facilis rerum! Obcaecati eaque aspernatur nulla id, veritatis, ullam
-                        consequatur amet aperiam corrupti nobis ipsum eligendi minima doloribus facere dicta! Expedita
-                        magnam, ad cumque optio perferendis quidem excepturi rem non esse corrupti consequuntur
-                        veritatis architecto et aperiam dolorem repellendus neque nobis debitis amet a labore
-                        repudiandae doloribus obcaecati? Ipsum provident, quam cupiditate quo nemo pariatur in
-                        voluptatem ullam harum, ut incidunt quibusdam quas dolor accusantium architecto. Ab omnis sed
-                        rerum quia ad laudantium nostrum, voluptas minima, quibusdam quidem asperiores quasi. Qui
-                        perferendis sed totam eos consequatur repudiandae.</p>
                 </div>
             </div>
         </section>
 
         <!-- Who We Are Section -->
-        <section class="grid grid-cols-1 md:grid-cols-2 my-10 mx-4 lg:mx-8 mt-20">
-            <div class="pr-5">
-                <h2 class="text-3xl mb-5" style="color: rgba(31, 52, 122, 1);">Who We Are</h2>
-                <p class="text-blue-600 mb-5">Divine IT Limited a high tech innovative IT consulting & software
-                    development power-house</p>
-                <p>Founded in 2005 , the IT power house takes pride in assisting companies with their robust ERP system
-                    in Bangladesh and around the world. The company serves by the principle- ‘Customer, Commitment,
-                    Technology’ and positioned at the forefront of rendering high quality IT solutions to its clients
-                </p>
-                <img class=" w-2/3 lg:w-1/2 mt-5" src="/images/who.png" alt="">
-            </div>
-            <div class="text-center grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-8 lg:ml-8 mt-8 md:mt-0">
-                <div
-                    class="flex flex-col justify-center items-center px-2 border-2 border-slate-200 hover:border-blue-600 py-4 rounded-md hover:shadow-md hover:shadow-slate-500">
-                    <img class="w-20" src="/images/logo1.png" alt="">
-                    <p class="text-2xl">2005</p>
-                    <p>Year of Establishment</p>
-                </div>
-                <div
-                    class="flex flex-col justify-center items-center px-2 border-2 border-slate-200 hover:border-blue-600 py-4 rounded-md hover:shadow-md hover:shadow-slate-500">
-                    <img class="w-20" src="/images/logo1.png" alt="">
-                    <p class="text-2xl">2005</p>
-                    <p>Year of Establishment</p>
-                </div>
-                <div
-                    class="flex flex-col justify-center items-center px-2 border-2 border-slate-200 hover:border-blue-600 py-4 rounded-md hover:shadow-md hover:shadow-slate-500">
-                    <img class="w-20" src="/images/logo1.png" alt="">
-                    <p class="text-2xl">2005</p>
-                    <p>Year of Establishment</p>
-                </div>
-                <div
-                    class="flex flex-col justify-center items-center px-2 border-2 border-slate-200 hover:border-blue-600 py-4 rounded-md hover:shadow-md hover:shadow-slate-500">
-                    <img class="w-20" src="/images/logo1.png" alt="">
-                    <p class="text-2xl">2005</p>
-                    <p>Year of Establishment</p>
-                </div>
-                <div
-                    class="flex flex-col justify-center items-center px-2 border-2 border-slate-200 hover:border-blue-600 py-4 rounded-md hover:shadow-md hover:shadow-slate-500">
-                    <img class="w-20" src="/images/logo1.png" alt="">
-                    <p class="text-2xl">2005</p>
-                    <p>Year of Establishment</p>
-                </div>
-                <div
-                    class="flex flex-col justify-center items-center px-2 border-2 border-slate-200 hover:border-blue-600 py-4 rounded-md hover:shadow-md hover:shadow-slate-500">
-                    <img class="w-20" src="/images/logo1.png" alt="">
-                    <p class="text-2xl">2005</p>
-                    <p>Year of Establishment</p>
+        <section class="bg-white">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 py-20 mx-4 lg:mx-8">
+                    <div class="pr-5">
+                        <h2 class="text-3xl font-semibold mb-5" style="color: rgba(31, 52, 122, 1);">Who We Are</h2>
+                        <p class="text-blue-600 mb-5">Divine IT Limited a high tech innovative IT consulting & software
+                            development power-house</p>
+                        <p>Founded in 2005 , the IT power house takes pride in assisting companies with their robust ERP
+                            system
+                            in Bangladesh and around the world. The company serves by the principle- ‘Customer,
+                            Commitment,
+                            Technology’ and positioned at the forefront of rendering high quality IT solutions to its
+                            clients
+                        </p>
+                        <img class=" w-2/3 lg:w-1/2 mt-5" src="/images/who.png" alt="">
+                    </div>
+                    <div class="text-center grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-8 lg:ml-8 mt-8 md:mt-0">
+                        <div
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo1.png" alt="">
+                            <p class="text-2xl">2005</p>
+                            <p>Year of Establishment</p>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo1.png" alt="">
+                            <p class="text-2xl">2005</p>
+                            <p>Year of Establishment</p>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo1.png" alt="">
+                            <p class="text-2xl">2005</p>
+                            <p>Year of Establishment</p>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo1.png" alt="">
+                            <p class="text-2xl">2005</p>
+                            <p>Year of Establishment</p>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo1.png" alt="">
+                            <p class="text-2xl">2005</p>
+                            <p>Year of Establishment</p>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo1.png" alt="">
+                            <p class="text-2xl">2005</p>
+                            <p>Year of Establishment</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Integrate, Secure & Scale Your Business Section -->
-        <section class=" relative mt-12 md:mt-20">
-            <div class="w-full h-[100vh] md:h-[55vh] lg:h-[70vh] bg-blend-multiply bg-slate-400 opacity-20"
-                style="background-image: url('https://thumbs.dreamstime.com/b/abstract-yellow-tech-background-dark-53781316.jpg'); background-size: cover;">
-            </div>
-            <div class="absolute text-center w-full top-14 md:top-20">
-                <h2 class=" text-3xl md:text-3xl">Integrate, Secure & Scale Your Business</h2>
+        <section class="back3">
+            <div class="max-w-[1200px] mx-auto text-center py-20">
+                <h2 class="text-3xl font-semibold md:text-3xl">Integrate, Secure & Scale Your Business</h2>
                 <div class="grid grid-cols-1 md:grid-cols-4 mt-5 md:mt-10 gap-5 px-5">
                     <div
-                        class="border rounded-md border-slate-400 hover:border-blue-600 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-5 md:p-10">
+                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-5 md:p-10">
                         <img class="w-20" src="/images/it.png" alt="">
                         <h2 class="text-xl">ERP & Business Software</h2>
                     </div>
                     <div
-                        class="border rounded-md border-slate-400 hover:border-blue-600 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-5 md:p-10">
+                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-5 md:p-10">
                         <img class="w-20" src="/images/it.png" alt="">
                         <h2 class="text-xl">ERP & Business Software</h2>
                     </div>
                     <div
-                        class="border rounded-md border-slate-400 hover:border-blue-600 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-5 md:p-10">
+                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-5 md:p-10">
                         <img class="w-20" src="/images/it.png" alt="">
                         <h2 class="text-xl">ERP & Business Software</h2>
                     </div>
                     <div
-                        class="border rounded-md border-slate-400 hover:border-blue-600 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-5 md:p-10">
+                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-5 md:p-10">
                         <img class="w-20" src="/images/it.png" alt="">
                         <h2 class="text-xl">ERP & Business Software</h2>
                     </div>
                 </div>
                 <button
-                    class="mt-8 h-fit w-fit py-3 px-4 text-white bg-blue-600 rounded-md transition-transform duration-300 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center hover:border-2 hover:border-blue-600">
+                    class="mt-8 h-fit w-fit py-3 px-4 text-white rounded-md bg-blue-600 transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center border hover:border-blue-600">
                     Contact Us
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-4 h-4 inline-block">
@@ -294,38 +366,49 @@
         </section>
 
         <!-- Achievement Section -->
-        <section class="md:grid grid-cols-2 bg-white pt-14 md:pt-20 mb-4 px-5 md:px-10">
-            <div class="grid col-span-1 space-y-8 pb-10">
-                <h2 class="text-3xl" style="color: rgba(31, 52, 122, 1);">Industry Recognition</h2>
-                <p>Since 2005, Divine IT Limited has been developing solutions for businesses in different industries.
-                    In these 18 years, the company has reached more than 65 industries that are served by Divine IT’s
-                    consultancy services, development and implementation of web applications.</p>
-                <p>Through constant enhancement of features and development of technology, PrismERP (flagship product of
-                    Divine IT Limited) has achieved BASIS National ICT Awards 2017, APICTA International Awards 2017 and
-                    attained the highest recognition locally by achieving National Productivity & Quality Excellence
-                    Award twice for contributing in the small and medium industries of Bangladesh.</p>
-                <button
-                    class="mt-8 h-fit w-fit py-3 px-4 text-white bg-blue-600 rounded-md transition-transform duration-300 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center hover:border-2 hover:border-blue-600">
-                    Learn More
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-4 h-4 inline-block">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                    </svg>
-                </button>
-            </div>
-            <div class="grid col-span-1">
-                <img class="w-11/12 mx-auto pb-5 md:py-10 lg:py-0 h-full" src="/images/trophi.jpg" alt="">
+        <section class="bg-white">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="md:grid grid-cols-2 pt-14 md:pt-20 mb-4 px-5 md:px-10">
+                    <div class="grid col-span-1 space-y-8 pb-10">
+                        <h2 class="text-3xl font-semibold" style="color: rgba(31, 52, 122, 1);">Industry Recognition
+                        </h2>
+                        <p>Since 2005, Divine IT Limited has been developing solutions for businesses in different
+                            industries.
+                            In these 18 years, the company has reached more than 65 industries that are served by Divine
+                            IT’s
+                            consultancy services, development and implementation of web applications.</p>
+                        <p>Through constant enhancement of features and development of technology, PrismERP (flagship
+                            product of
+                            Divine IT Limited) has achieved BASIS National ICT Awards 2017, APICTA International Awards
+                            2017 and
+                            attained the highest recognition locally by achieving National Productivity & Quality
+                            Excellence
+                            Award twice for contributing in the small and medium industries of Bangladesh.</p>
+                        <button
+                            class="mt-8 h-fit w-fit py-3 px-4 text-white bg-blue-600 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center border hover:border-blue-600">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="grid col-span-1">
+                        <img class="w-11/12 mx-auto pb-5 md:py-10 lg:py-0 h-full" src="/images/trophi.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Awards Section -->
-        <section class="mb-10">
-            <h2 class="text-center text-3xl mt-16 mb-10" style="color: rgba(31, 52, 122, 1);">News and Events</h2>
-            <div class="md:grid grid-cols-2 gap-5">
+        <section class="mb-10 max-w-[1200px] mx-auto ">
+            <h2 class="text-center text-3xl font-semibold mt-16 mb-10" style="color: rgba(31, 52, 122, 1);">News and
+                Events</h2>
+            <div class="md:grid grid-cols-2 gap-5 mx-2 lg:mx-0">
                 <div class="space-y-5">
-                    <div class="border-2 border-slate-300 bg-white rounded-md  space-y-4 h-fit">
-                        <img class="w-full h-80 rounded-md" src="/images/award.jpg" alt="">
+                    <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
+                        <img class="w-full h-60 lg:h-80 rounded-md" src="/images/award.jpg" alt="">
                         <h2 class="text-xl px-3">APICTA International Awards 2017</h2>
                         <p class="px-3 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse
                             similique quo, eligendi officia aut tempore! Assumenda inventore, dolorem hic et dignissimos
@@ -337,8 +420,8 @@
                             expedita? A corrupti, ad eius perspiciatis, tenetur animi repellat aliquid ducimus
                             repudiandae nam obcaecati omnis! Atque dicta obcaecati aliquam eos quam voluptates iusto</p>
                     </div>
-                    <div class="border-2 border-slate-300 bg-white rounded-md  space-y-4 h-fit">
-                        <img class="w-full h-80 rounded-md" src="/images/award2.jpg" alt="">
+                    <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
+                        <img class="w-full h-60 lg:h-80 rounded-md" src="/images/award2.jpg" alt="">
                         <h2 class="text-xl px-3">National Productivity Award 2018</h2>
                         <p class="px-3 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ut.
                             Voluptas, numquam soluta aliquid iste doloribus hic impedit assumenda rem deleniti cumque
@@ -349,7 +432,7 @@
                     </div>
                 </div>
                 <div class="space-y-5 mt-5 md:mt-0">
-                    <div class="border-2 border-slate-300 bg-white rounded-md  space-y-4 h-fit">
+                    <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
                         <h2 class="text-xl px-3 pt-5">WITSA Global ICT Excellence Award 2020</h2>
                         <p class="px-3 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente
                             doloremque, accusantium quaerat inventore perspiciatis! Minus itaque maiores in facere ipsam
@@ -358,7 +441,7 @@
                             molestias perspiciatis facere fuga mollitia sequi iure pariatur illum atque architecto
                             accusantium dignissimos odio! Cum.</p>
                     </div>
-                    <div class="border-2 border-slate-300 bg-white rounded-md  space-y-4 h-fit">
+                    <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
                         <h2 class="text-xl px-3 pt-5">WITSA Global ICT Excellence Award 2020</h2>
                         <p class="px-3 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente
                             doloremque, accusantium quaerat inventore perspiciatis! Minus itaque maiores in facere ipsam
@@ -367,17 +450,17 @@
                             molestias perspiciatis facere fuga mollitia sequi iure pariatur illum atque architecto
                             accusantium dignissimos odio! Cum.</p>
                     </div>
-                    <div class="border-2 border-slate-300 bg-white rounded-md  space-y-4 h-fit">
+                    <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
                         <h2 class="text-xl px-3 pt-5">Basis National ICT Awards 2017</h2>
                         <p class="px-3 pb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi laborum
                             sunt aspernatur reiciendis dicta odit a impedit aperiam officiis debitis.</p>
                     </div>
-                    <div class="border-2 border-slate-300 bg-white rounded-md  space-y-4 h-fit">
+                    <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
                         <h2 class="text-xl px-3 pt-5">National Productivity & Quality Excellence Award 2015</h2>
                         <p class="px-3 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae
                             accusantium corporis sed modi doloribus nam minus soluta commodi quis.</p>
                     </div>
-                    <div class="border-2 border-slate-300 bg-white rounded-md  space-y-4 h-fit">
+                    <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
                         <h2 class="text-xl px-3 pt-5">Divine IT Limited joined “Learning & Earning Development
                             Project-2022 ”
                         </h2>
@@ -394,10 +477,10 @@
         <!-- Get In Touch Section -->
         <section>
             <div class="text-center bg-white py-8">
-                <h2 class="uppercase text-2xl">Get In Touch</h2>
+                <h2 class="uppercase text-xl">Get In Touch</h2>
                 <div class="md:flex gap-10 justify-center">
                     <button
-                        class="mt-8 h-fit w-fit py-3 px-8 text-sm text-white bg-blue-600 rounded-md transition-transform duration-300 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center hover:border-2 hover:border-blue-600">
+                        class="mt-8 h-fit w-fit py-3 px-8 text-sm text-white bg-blue-600 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center border hover:border-blue-600">
                         SALES: +001122334455
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-4 h-4 inline-block">
@@ -406,7 +489,7 @@
                         </svg>
                     </button>
                     <button
-                        class="mt-8 h-fit w-fit py-3 px-8 text-sm text-white bg-blue-600 rounded-md transition-transform duration-300 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center hover:border-2 hover:border-blue-600">
+                        class="mt-8 h-fit w-fit py-3 px-8 text-sm text-white bg-blue-600 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center border hover:border-blue-600">
                         SUPPORT: +001122334455
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-4 h-4 inline-block">
@@ -422,10 +505,10 @@
     <!-- Footer Goes Here -->
     <footer class="">
         <!-- Follow us Section -->
-        <section class="flex justify-between items-center px-5 lg:px-10 py-5 md:py-0">
+        <section class="flex justify-between items-center px-5 py-5 md:py-0 max-w-[1200px] mx-auto">
             <div><img class="w-2/3 md:w-9/12" src="/images/logoo.png" alt=""></div>
             <div class="flex justify-center items-center gap-2 md:gap-5">
-                <p class="text-sm md:text-lg text-black">FOLLOW US</p>
+                <h3 class="text-sm md:text-md font-semibold">FOLLOW US</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">z
                     <path
                         d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
@@ -446,97 +529,107 @@
         </section>
 
         <!-- Main Footer Section -->
-        <section class="md:grid grid-cols-6 bg-white pt-10 md:ps-10">
-            <div class="grid col-span-1 ms-10 md:ms-0">
-                <img src="/images/footer.png" alt="">
-            </div>
-            <div class="grid col-span-5 pb-10">
-                <div class="grid grid-cols-2 md:grid-cols-5 ms-10 space-y-5 md:space-y-0">
-                    <div class="space-y-2 mt-5 md:mt-0">
-                        <h2 class="text-lg">PRODUCTS</h2>
-                        <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
-                    </div>
-                    <div class="space-y-2">
-                        <h2 class="text-lg">PRODUCTS</h2>
-                        <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
-                    </div>
-                    <div class="space-y-2">
-                        <h2 class="text-lg">SERVICES</h2>
-                        <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
-                    </div>
-                    <div class="space-y-2">
-                        <h2 class="text-lg">COMPANY</h2>
-                        <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
-                        <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
-                    </div>
-                    <div class="space-y-2">
-                        <h2 class="text-lg">CONTACT US</h2>
-                        <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
-                                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">z
-                                <path
-                                    d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z" />
-                            </svg>+00811223344</p>
-                        <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
-                                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
-                                <path
-                                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                            </svg>+00811223344</p>
-                        <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
-                                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
-                                <path
-                                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                            </svg>+00811223344</p>
-                        <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
-                                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
-                                <path
-                                    d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-                            </svg>abc@gmail.com</p>
-
+        <section class="bg-white">
+            <div class="md:grid grid-cols-6 pt-10 ps-5 max-w-[1200px] mx-auto">
+                <div class="grid col-span-1 md:ms-0">
+                    <img src="/images/footer.png" alt="">
+                </div>
+                <div class="grid col-span-5 pb-10 lg:ms-5">
+                    <div class="grid grid-cols-2 md:grid-cols-5 space-y-5 md:space-y-0">
+                        <div class="space-y-2 mt-5 md:mt-0">
+                            <h3 class="text-md">PRODUCTS</h3>
+                            <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-md">PRODUCTS</h3>
+                            <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-md">SERVICES</h3>
+                            <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-md">COMPANY</h3>
+                            <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
+                            <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-md">CONTACT US</h3>
+                            <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">z
+                                    <path
+                                        d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z" />
+                                </svg>+00811223344</p>
+                            <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
+                                    <path
+                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                </svg>+00811223344</p>
+                            <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
+                                    <path
+                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                </svg>+00811223344</p>
+                            <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
+                                    <path
+                                        d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                                </svg>abc@gmail.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Copyright Section -->
-        <section class="flex justify-between px-5 md:px-10 bg-blue-500 text-white py-3 items-center">
-            <div class="md:flex gap-4 text-sm">
-                <a>Sitemap</a>
-                <a>Terms Of Service</a>
-                <a>Privacy Policy</a>
-                <a>Treadmarks</a>
-            </div>
-            <div>
-                <p class="flex items-center gap-2 text-sm text-white"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 512 512">z
-                        <path
-                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z" />
-                    </svg> Divine IT Limited 2023</p>
+        <section class="bg-blue-500">
+            <div class="flex justify-between px-5 text-white py-3 items-center max-w-[1200px] mx-auto">
+                <div class="md:flex gap-4 text-sm">
+                    <a>Sitemap</a>
+                    <a>Terms Of Service</a>
+                    <a>Privacy Policy</a>
+                    <a>Treadmarks</a>
+                </div>
+                <div>
+                    <p class="flex items-center gap-2 text-sm text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="1em" viewBox="0 0 512 512">z
+                            <path
+                                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z" />
+                        </svg> Divine IT Limited 2023</p>
+                </div>
             </div>
         </section>
     </footer>
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[44px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[40px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
 </body>
 
 </html>

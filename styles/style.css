@@ -1,6 +1,24 @@
 body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
+.back1{
+    background-color: #4d4d4d;
+    background-image: url('https://img.freepik.com/premium-photo/businessman-using-tech-devices-icons-thin-line-interface_117023-904.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.back2{
+    background-color: rgb(106, 151, 219);
+    background-image: url('https://t4.ftcdn.net/jpg/02/81/89/73/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg'); 
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.back3{
+    background-color:#e4e0e0 ;
+    background-image: url('https://thumbs.dreamstime.com/b/abstract-yellow-tech-background-dark-53781316.jpg'); 
+    background-size: cover;
+    background-blend-mode:overlay;
+}
 .fill{
     color: white;
 }
