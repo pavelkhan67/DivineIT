@@ -8,6 +8,8 @@
     <title>Adventure Soft Ltd.</title>
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
     <!-- font link -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
@@ -67,7 +69,8 @@
                             </i> </a>
                     </li>
                     <li class="mx-2 my-6 md:my-0">
-                        <button class="border border-slate-100 hover:border-black px-3 font-semibold py-1">LOGIN</button>
+                        <button
+                            class="border border-slate-100 hover:border-black px-3 font-semibold py-1">LOGIN</button>
                     </li>
                     <li class="my-6 md:my-0">
                         <button class="px-4 py-1 bg-sky-800 text-white rounded-md hover:bg-sky-600">See Pricing</button>
@@ -76,28 +79,77 @@
             </nav>
         </section>
         <!-- hero Section -->
-        <section class="">
-            <div class="back1">
-                <div class="text-white max-w-[1200px] mx-auto pt-36 pb-24">
-                    <div class="w-3/4 space-y-5 ms-5">
-                        <button class="w-fit h-8 bg-blue-700 px-4">VAT Management System</button>
-                        <h2 class="text-2xl font-semibold">PrismERP, platform independent </h2>
-                        <h2 class="text-2xl font-semibold">ERP system for multi-dimensional business</h2>
-                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat suscipit
-                            labore atque
-                            architecto natus totam corrupti, assumenda quia perspiciatis aut?</p>
-                        <button
-                            class="mt-8 h-fit w-fit py-2 px-4 text-white bg-blue-600 rounded-md transition-transform duration-500 hover:scale-x-110 transform origin-center hover:border-blue-600">
-                            Read More
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-4 h-4 inline-block">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                            </svg>
-                        </button>
+
+        <section class="main swiper mySwiper">
+            <div class="wrapper swiper-wrapper">
+                <div class="back1 slide swiper-slide">
+                    <div class="text-white max-w-[1200px] mx-auto pt-36 pb-24">
+                        <div class="w-3/4 space-y-5 ms-5">
+                            <button class="w-fit h-8 bg-blue-600 px-4">Software Technology Park</button>
+                            <h2 class="text-2xl font-semibold">Welcome To Adventure Soft Ltd,  </h2>
+                            <h2 class="text-2xl font-semibold">a private software technology park</h2>
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat suscipit
+                                labore atque
+                                architecto natus totam corrupti, assumenda quia perspiciatis aut?</p>
+                            <button
+                                class="mt-8 h-fit w-fit py-2 px-4 text-white bg-blue-500 rounded-md transition-transform duration-500 hover:scale-x-110 transform origin-center hover:border-blue-500">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-4 h-4 inline-block">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="back2 slide swiper-slide">
+                    <div class="text-white max-w-[1200px] mx-auto pt-36 pb-24">
+                        <div class="w-3/4 space-y-5 ms-5">
+                            <button class="w-fit h-8 bg-blue-600 px-4">Enterprise Resource Planning </button>
+                            <h2 class="text-2xl font-semibold">PrismERP, platform independent </h2>
+                            <h2 class="text-2xl font-semibold">ERP system for multi-dimensional business</h2>
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat suscipit
+                                labore atque
+                                architecto natus totam corrupti, assumenda quia perspiciatis aut?</p>
+                            <button
+                                class="mt-8 h-fit w-fit py-2 px-4 text-white bg-blue-500 rounded-md transition-transform duration-500 hover:scale-x-110 transform origin-center hover:border-blue-500">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-4 h-4 inline-block">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="back3 slide swiper-slide">
+                    <div class="text-white max-w-[1200px] mx-auto pt-36 pb-24">
+                        <div class="w-3/4 space-y-5 ms-5">
+                            <button class="w-fit h-8 bg-blue-600 px-4">VAT Management System</button>
+                            <h2 class="text-2xl font-semibold">PrismVAT, an NBR approved </h2>
+                            <h2 class="text-2xl font-semibold">VAT management software for Bangladesh</h2>
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat suscipit
+                                labore atque
+                                architecto natus totam corrupti, assumenda quia perspiciatis aut?</p>
+                            <button
+                                class="mt-8 h-fit w-fit py-2 px-4 text-white bg-blue-500 rounded-md transition-transform duration-500 hover:scale-x-110 transform origin-center hover:border-blue-500">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-4 h-4 inline-block">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- <div class="swiper-button-next nav-btn"></div> -->
+            <!-- <div class="swiper-button-prev nav-btn"></div> -->
+            <div class="swiper-pagination "></div>
         </section>
     </header>
 
@@ -107,75 +159,75 @@
         <section class="text-center">
             <h2 class="text-2xl font-semibold pt-8 pb-6">Top Products</h2>
             <div class="bg-white border-t-2 border-slate-200">
-                <div class="grid grid-cols-3 lg:grid-cols-6 max-w-[1200px] mx-auto">
+                <div class="grid grid-cols-3 lg:grid-cols-6 max-w-[1200px] mx-auto h-24">
                     <div class="border-r-2 border-slate-100">
-                        <img class="filter brightness-90 w-full" src="/images/img.png" alt="">
+                        <img class="filter brightness-90 w-full h-24" src="/images/pimg.png" alt="">
                     </div>
                     <div class="border-r-2 border-slate-100">
-                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                        <img class="hover:filter hover:brightness-90 w-full h-24" src="/images/pimg2.png" alt="">
                     </div>
                     <div class="border-r-2 border-slate-100">
-                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                        <img class="hover:filter hover:brightness-90 w-full h-24" src="/images/pimg3.png" alt="">
                     </div>
                     <div class="border-r-2 border-slate-100">
-                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                        <img class="hover:filter hover:brightness-90 w-full h-24" src="/images/pimg4.png" alt="">
                     </div>
                     <div class="border-r-2 border-slate-100">
-                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                        <img class="hover:filter hover:brightness-90 w-full h-24" src="/images/pimg5.png" alt="">
                     </div>
                     <div class="border-r-2 border-white">
-                        <img class="hover:filter hover:brightness-90 w-full" src="/images/img.png" alt="">
+                        <img class="hover:filter hover:brightness-90 w-full h-24" src="/images/pimg6.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="" style="background-color: rgba(55, 135, 219, 1);">
                 <div
-                    class="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 lg:px-10 py-8 max-w-[1200px] mx-auto">
+                    class="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 lg:px-10 pt-32 lg:pt-10 pb-8 max-w-[1200px] mx-auto">
                     <div class="grid col-span-2 my-auto ">
                         <div class="grid grid-cols-2 gap-2">
                             <div class="flex items-center gap-2">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon.jpg" alt="">
                                 <p class="text-white">Financial Management System</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon2.jpg" alt="">
+                                <p class="text-white">Sales & Distribution Management</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon3.jpg" alt="">
+                                <p class="text-white">Production Planning & Contro</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon4.jpg" alt="">
+                                <p class="text-white">Customer Relationship Management</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon5.jpg" alt="">
+                                <p class="text-white">Project System</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon6.jpg" alt="">
+                                <p class="text-white">Supply Chain Management</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon7.jpg" alt="">
+                                <p class="text-white">Human Capital Management</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon8.jpg" alt="">
+                                <p class="text-white">Productivity Management</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon9.jpg" alt="">
+                                <p class="text-white">Office Administration</p>
                             </div>
                             <div class="flex items-center gap-2 ">
-                                <img class="w-8 md:w-10 lg:w-12 rounded-full" src="/images/icon.jpg" alt="">
-                                <p class="text-white">Financial Management System</p>
+                                <img class="w-10 md:w-12 lg:w-14 rounded-full" src="/images/icon10.jpg" alt="">
+                                <p class="text-white">Core System Components</p>
                             </div>
                         </div>
                         <button
-                            class="mt-8 h-fit w-fit py-2 px-4 text-white rounded-md border border-white transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center">
+                            class="mt-8 h-fit w-fit py-2 px-4 text-white rounded-md border border-white transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center">
                             View More
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-4 h-4 inline-block">
@@ -184,7 +236,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="grid col-span-1 mt-10 lg:mt-0">
+                    <div class="grid col-span-1 mt-8 lg:mt-0">
                         <img class="w-96 " src="/images/img2.png" alt="">
                     </div>
                 </div>
@@ -197,7 +249,7 @@
                 <div class="">
 
                 </div>
-                <div class="back2 h-[75vh] md:h-[50vh] lg:h-[70vh]">
+                <div class="back4 h-[75vh] md:h-[50vh] lg:h-[70vh]">
 
                 </div>
                 <div class="absolute inset-0 flex items-center justify-center">
@@ -205,11 +257,11 @@
                         <h2 class="text-2xl font-semibold ms-5 mb-8" style="color: rgba(31, 52, 122, 1);">What Clients
                             say</h2>
                         <div class="bg-white rounded-md p-5 m-5">
-                            <div class="flex items-center gap-2">
-                                <img class="w-24 rounded-full" src="/images/user.jpeg" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="w-20 rounded-full" src="/images/user.jpeg" alt="">
                                 <div>
                                     <h2 class="text-xl font-semibold">Pavel khan</h2>
-                                    <p class="text-blue-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    <p class="text-blue-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                     </p>
                                 </div>
                             </div>
@@ -239,7 +291,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 py-14 mx-4 lg:mx-8">
                     <div class="pr-5">
                         <h2 class="text-2xl font-semibold mb-5" style="color: rgba(31, 52, 122, 1);">Who We Are</h2>
-                        <p class="text-blue-600 mb-5">Adventure Soft Ltd. a high tech innovative IT consulting & software
+                        <p class="text-blue-500 mb-5">Adventure Soft Ltd. a high tech innovative IT consulting &
+                            software
                             development power-house</p>
                         <p>Founded in 2005 , the IT power house takes pride in assisting companies with their robust ERP
                             system
@@ -250,42 +303,42 @@
                         </p>
                         <img class=" w-2/3 lg:w-5/12 mt-5" src="/images/who.png" alt="">
                     </div>
-                    <div class="text-center grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-8 lg:ml-8 mt-8 md:mt-0">
+                    <div class="text-center grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 lg:ml-8 mt-8 md:mt-0">
                         <div
-                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-500 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
                             <img class="w-20" src="/images/logo1.png" alt="">
                             <p class="text-xl font-semibold">2005</p>
                             <p class="text-sm">Year of Establishment</p>
                         </div>
                         <div
-                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
-                            <img class="w-20" src="/images/logo1.png" alt="">
-                            <p class="text-xl font-semibold">2005</p>
-                            <p class="text-sm">Year of Establishment</p>
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-500 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo2.png" alt="">
+                            <p class="text-xl font-semibold">215+</p>
+                            <p class="text-sm">Total Employees</p>
                         </div>
                         <div
-                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
-                            <img class="w-20" src="/images/logo1.png" alt="">
-                            <p class="text-xl font-semibold">2005</p>
-                            <p class="text-sm">Year of Establishment</p>
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-500 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo3.png" alt="">
+                            <p class="text-xl font-semibold">12</p>
+                            <p class="text-sm">Copyrighted Products</p>
                         </div>
                         <div
-                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
-                            <img class="w-20" src="/images/logo1.png" alt="">
-                            <p class="text-xl font-semibold">2005</p>
-                            <p class="text-sm">Year of Establishment</p>
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-500 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo4.png" alt="">
+                            <p class="text-xl font-semibold">5000+</p>
+                            <p class="text-sm">Services Delivered</p>
                         </div>
                         <div
-                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
-                            <img class="w-20" src="/images/logo1.png" alt="">
-                            <p class="text-xl font-semibold">2005</p>
-                            <p class="text-sm">Year of Establishment</p>
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-500 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo5.png" alt="">
+                            <p class="text-xl font-semibold">1ml+</p>
+                            <p class="text-sm">Happy User</p>
                         </div>
                         <div
-                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-400 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
-                            <img class="w-20" src="/images/logo1.png" alt="">
-                            <p class="text-xl font-semibold">2005</p>
-                            <p class="text-sm">Year of Establishment</p>
+                            class="flex flex-col justify-center items-center px-2 border border-slate-200 hover:border-blue-500 py-4 rounded-md hover:shadow-md hover:shadow-slate-500 transition-all duration-500">
+                            <img class="w-20" src="/images/logo6.png" alt="">
+                            <p class="text-xl font-semibold">24/7</p>
+                            <p class="text-sm">Support System</p>
                         </div>
                     </div>
                 </div>
@@ -293,33 +346,33 @@
         </section>
 
         <!-- Integrate, Secure & Scale Your Business Section -->
-        <section class="back3">
+        <section class="back5">
             <div class="max-w-[1200px] mx-auto text-center py-12">
                 <h2 class="text-2xl font-semibold">Integrate, Secure & Scale Your Business</h2>
                 <div class="grid grid-cols-1 md:grid-cols-4 mt-5 md:mt-8 gap-5 px-5">
                     <div
-                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-8">
-                        <img class="w-20" src="/images/it.png" alt="">
+                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-8 md:p-4 lg:p-8">
+                        <img class="w-20" src="	https://www.divineit.net/media/original_images/ERP-Business.png" alt="">
                         <h2 class="text-lg font-semibold">ERP & Business Software</h2>
                     </div>
                     <div
-                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-8">
-                        <img class="w-20" src="/images/it.png" alt="">
-                        <h2 class="text-lg font-semibold">ERP & Business Software</h2>
+                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-8 md:p-4 lg:p-8">
+                        <img class="w-20" src="	https://www.divineit.net/media/original_images/Security-and-Infrastructure.png" alt="">
+                        <h2 class="text-lg font-semibold">Security & Infrastructure</h2>
                     </div>
                     <div
-                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-8">
-                        <img class="w-20" src="/images/it.png" alt="">
-                        <h2 class="text-lg font-semibold">ERP & Business Software</h2>
+                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-8 md:p-4 lg:p-8">
+                        <img class="w-20" src="https://www.divineit.net/media/original_images/Telecommunication-sky.png" alt="">
+                        <h2 class="text-lg font-semibold">Telecom Software</h2>
                     </div>
                     <div
-                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-8">
-                        <img class="w-20" src="/images/it.png" alt="">
-                        <h2 class="text-lg font-semibold">ERP & Business Software</h2>
+                        class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-8 md:p-4 lg:p-8">
+                        <img class="w-20" src="https://www.divineit.net/media/original_images/Business.png" alt="">
+                        <h2 class="text-lg font-semibold">IT & Business Services</h2>
                     </div>
                 </div>
                 <button
-                    class="mt-8 h-fit w-fit py-2 px-4 text-white rounded-md bg-blue-600 transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center border hover:border-blue-600">
+                    class="mt-8 h-fit w-fit py-2 px-4 text-white rounded-md bg-blue-500 transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
                     Contact Us
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-4 h-4 inline-block">
@@ -344,13 +397,14 @@
                             consultancy services, development and implementation of web applications.</p>
                         <p>Through constant enhancement of features and development of technology, PrismERP (flagship
                             product of
-                            Adventure Soft Ltd.) has achieved BASIS National ICT Awards 2017, APICTA International Awards
+                            Adventure Soft Ltd.) has achieved BASIS National ICT Awards 2017, APICTA International
+                            Awards
                             2017 and
                             attained the highest recognition locally by achieving National Productivity & Quality
                             Excellence
                             Award twice for contributing in the small and medium industries of Bangladesh.</p>
                         <button
-                            class="mt-8 h-fit w-fit py-2 px-4 text-white bg-blue-600 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center border hover:border-blue-600">
+                            class="mt-8 h-fit w-fit py-2 px-4 text-white bg-blue-500 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
                             Learn More
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-4 h-4 inline-block">
@@ -421,12 +475,14 @@
                             sunt aspernatur reiciendis dicta odit a impedit aperiam officiis debitis.</p>
                     </div>
                     <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
-                        <h2 class="text-lg font-semibold px-3 pt-5">National Productivity & Quality Excellence Award 2015</h2>
+                        <h2 class="text-lg font-semibold px-3 pt-5">National Productivity & Quality Excellence Award
+                            2015</h2>
                         <p class="px-3 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae
                             accusantium corporis sed modi doloribus nam minus soluta commodi quis.</p>
                     </div>
                     <div class="border border-slate-300 bg-white rounded-md  space-y-4 h-fit">
-                        <h2 class="text-lg font-semibold px-3 pt-5">Adventure Soft Ltd. joined “Learning & Earning Development
+                        <h2 class="text-lg font-semibold px-3 pt-5">Adventure Soft Ltd. joined “Learning & Earning
+                            Development
                             Project-2022 ”
                         </h2>
                         <p class="px-3 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae
@@ -445,7 +501,7 @@
                 <h2 class="uppercase text-lg font-semibold">Get In Touch</h2>
                 <div class="md:flex gap-6 justify-center">
                     <button
-                        class="mt-6 h-fit w-fit py-2 px-6 text-xs text-white bg-blue-600 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center border hover:border-blue-600">
+                        class="mt-6 h-fit w-fit py-2 px-6 text-xs text-white bg-blue-500 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
                         SALES: +001122334455
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-4 h-4 inline-block">
@@ -454,7 +510,7 @@
                         </svg>
                     </button>
                     <button
-                        class="mt-6 h-fit w-fit py-2 px-6 text-xs text-white bg-blue-600 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-600 hover:scale-x-110 transform origin-center border hover:border-blue-600">
+                        class="mt-6 h-fit w-fit py-2 px-6 text-xs text-white bg-blue-500 rounded-md transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
                         SUPPORT: +001122334455
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-4 h-4 inline-block">
@@ -594,6 +650,25 @@
             let list = document.querySelector('ul');
             e.name === 'menu' ? (e.name = "close", list.classList.add('top-[44px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[40px]'), list.classList.remove('opacity-100'))
         }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 3000
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
     </script>
 </body>
 
