@@ -27,3 +27,7 @@ p{
     font-size: small;
     /* font-weight: lighter; */
 }
+
+ul li a:hover{
+    font-weight: bold;
+}
