@@ -24,12 +24,6 @@ body{
 }
 p{
     color: #4d4d4d;
+    font-size: small;
     /* font-weight: lighter; */
 }
-
-/* .bg{
-    background-image: url('https://thumbs.dreamstime.com/b/abstract-yellow-tech-background-dark-53781316.jpg');
-    background-size: cover;
-    background-color: black;
-    background-blend-mode: multiply;
-} */
